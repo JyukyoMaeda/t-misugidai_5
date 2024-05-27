@@ -172,6 +172,9 @@ h1.-lh-2, h2.-lh-2, h3.-lh-2, h4.-lh-2, h5.-lh-2, h6.-lh-2, p.-lh-2, a.-lh-2, sp
 h1.-lh-3, h2.-lh-3, h3.-lh-3, h4.-lh-3, h5.-lh-3, h6.-lh-3, p.-lh-3, a.-lh-3, span.-lh-3, label.-lh-3, button.-lh-3 {
   line-height: 3;
 }
+h1.-lh-4, h2.-lh-4, h3.-lh-4, h4.-lh-4, h5.-lh-4, h6.-lh-4, p.-lh-4, a.-lh-4, span.-lh-4, label.-lh-4, button.-lh-4 {
+  line-height: 4;
+}
 @media (768px >= width) {
   h1.-lh-n_s, h2.-lh-n_s, h3.-lh-n_s, h4.-lh-n_s, h5.-lh-n_s, h6.-lh-n_s, p.-lh-n_s, a.-lh-n_s, span.-lh-n_s, label.-lh-n_s, button.-lh-n_s {
     line-height: normal;
@@ -224,6 +227,9 @@ h1.-ls-4, h2.-ls-4, h3.-ls-4, h4.-ls-4, h5.-ls-4, h6.-ls-4, p.-ls-4, a.-ls-4, sp
 }
 h1.-ls-5, h2.-ls-5, h3.-ls-5, h4.-ls-5, h5.-ls-5, h6.-ls-5, p.-ls-5, a.-ls-5, span.-ls-5, label.-ls-5, button.-ls-5 {
   letter-spacing: 0.5rem;
+}
+h1.-ls-10, h2.-ls-10, h3.-ls-10, h4.-ls-10, h5.-ls-10, h6.-ls-10, p.-ls-10, a.-ls-10, span.-ls-10, label.-ls-10, button.-ls-10 {
+  letter-spacing: 1rem;
 }
 h1.-shadow, h2.-shadow, h3.-shadow, h4.-shadow, h5.-shadow, h6.-shadow, p.-shadow, a.-shadow, span.-shadow, label.-shadow, button.-shadow {
   filter: drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.637)) !important;
@@ -302,9 +308,9 @@ html {
 }
 
 h1.s-SS, h2.s-SS, h3.s-SS, h4.s-SS, h5.s-SS, h6.s-SS, p.s-SS, a.s-SS, span.s-SS, label.s-SS, button.s-SS {
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 1.1vw, 1.2rem);
 }
-@media (width >= 768px) {
+@media (width >= 1200px) {
   h1.s-SS, h2.s-SS, h3.s-SS, h4.s-SS, h5.s-SS, h6.s-SS, p.s-SS, a.s-SS, span.s-SS, label.s-SS, button.s-SS {
     font-size: clamp(1rem, 2vw, 1.2rem);
   }
@@ -1672,6 +1678,66 @@ span.-block {
 @media (width >= 768px) {
   .pdr5 {
     padding-right: 5% !important;
+  }
+}
+
+@media (width >= 768px) {
+  .pdr6 {
+    padding-right: 6% !important;
+  }
+}
+
+@media (width >= 768px) {
+  .pdr7 {
+    padding-right: 7% !important;
+  }
+}
+
+@media (width >= 768px) {
+  .pdr8 {
+    padding-right: 8% !important;
+  }
+}
+
+@media (width >= 768px) {
+  .pdr9 {
+    padding-right: 9% !important;
+  }
+}
+
+@media (width >= 768px) {
+  .pdr10 {
+    padding-right: 10% !important;
+  }
+}
+
+@media (width >= 768px) {
+  .pdr11 {
+    padding-right: 11% !important;
+  }
+}
+
+@media (width >= 768px) {
+  .pdr12 {
+    padding-right: 12% !important;
+  }
+}
+
+@media (width >= 768px) {
+  .pdr13 {
+    padding-right: 13% !important;
+  }
+}
+
+@media (width >= 768px) {
+  .pdr14 {
+    padding-right: 14% !important;
+  }
+}
+
+@media (width >= 768px) {
+  .pdr15 {
+    padding-right: 15% !important;
   }
 }
 
@@ -3230,6 +3296,60 @@ button.swiper-pagination-bullet {
     background: #5a8190;
   }
 }
+@media (width >= 768px) {
+  .c-header__misugidai .c-header__lists {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+.c-header__misugidai .c-header__lists .c-header__item:nth-child(1) {
+  width: calc(12.5% - 60px);
+  margin-left: 60px;
+}
+@media (1200px >= width) {
+  .c-header__misugidai .c-header__lists .c-header__item:nth-child(1) {
+    max-width: 40px;
+  }
+}
+@media (width >= 1200px) {
+  .c-header__misugidai .c-header__lists .c-header__item:nth-child(1) {
+    width: calc(10% - 60px);
+    margin-left: 60px;
+  }
+}
+.c-header__misugidai .c-header__lists .c-header__item:nth-child(2) {
+  width: 87.5%;
+}
+@media (width >= 1200px) {
+  .c-header__misugidai .c-header__lists .c-header__item:nth-child(2) {
+    width: 90%;
+  }
+}
+.c-header__misugidai .contactArea {
+  width: 30%;
+  max-width: 350px;
+  margin-right: 0;
+  margin-left: auto;
+}
+.c-header__misugidai .contactArea li {
+  position: relative;
+}
+.c-header__misugidai .contactArea li:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 100%;
+  background: #3b3b3b;
+}
+.c-header__misugidai .readArea {
+  width: 50%;
+}
+.c-header__misugidai .readArea li img {
+  width: auto;
+}
 
 .c-footer {
   width: 100vw;
@@ -4060,54 +4180,6 @@ button.swiper-pagination-bullet {
     width: 95%;
   }
 }
-.c-contents.-h-logo {
-  position: relative;
-}
-.c-contents.-h-logo .c-contentsBox {
-  position: absolute;
-}
-.c-contents.-h-logo .c-contentsBox.-logo-item01 {
-  top: 51%;
-  left: 101.5%;
-  width: 6.5%;
-}
-@media (width >= 768px) {
-  .c-contents.-h-logo .c-contentsBox.-logo-item01 {
-    top: 17.5%;
-    left: 30.8%;
-    width: 2.3%;
-  }
-}
-.c-contents.-h-logo .c-contentsBox.-logo-item02 {
-  top: 32%;
-  left: 110%;
-  width: 5%;
-}
-@media (width >= 768px) {
-  .c-contents.-h-logo .c-contentsBox.-logo-item02 {
-    top: 10%;
-    left: 33%;
-    width: 1.5%;
-  }
-}
-.c-contents.-h-logo .c-contentsBox.-soldOut {
-  top: 36%;
-  left: 45%;
-  transform: rotate(-5deg) translate(-50%, -50%);
-  width: 70%;
-  z-index: 99;
-  filter: drop-shadow(1px 1px 2px rgb(128, 128, 128));
-}
-.c-contents.-h-logo .c-contentsBox.-soldOut img {
-  background: #5a8190;
-}
-@media (width >= 768px) {
-  .c-contents.-h-logo .c-contentsBox.-soldOut {
-    top: 41%;
-    left: 63%;
-    width: 40%;
-  }
-}
 .c-contents.-f-slider, .c-contents.-f-view {
   width: 100%;
   height: auto;
@@ -4442,37 +4514,14 @@ button.swiper-pagination-bullet {
 .c-contents.-imgBg .c-contentsBox {
   position: absolute;
 }
-.c-contents.-imgBg .c-contentsBox.-logo-item01 {
-  top: 54%;
-  left: 95.5%;
-  width: 5%;
+.c-contents.-imgBg .c-contentsBox.-ja {
+  top: 2%;
+  left: -50%;
 }
-@media (width >= 768px) {
-  .c-contents.-imgBg .c-contentsBox.-logo-item01 {
-    top: 17.5%;
-    left: 30.8%;
-    width: 2.3%;
-  }
-}
-.c-contents.-imgBg .c-contentsBox.-logo-item02 {
-  top: 45%;
-  left: 100%;
-  width: 5%;
-}
-@media (width >= 768px) {
-  .c-contents.-imgBg .c-contentsBox.-logo-item02 {
-    top: 10%;
-    left: 33%;
-    width: 1.5%;
-  }
-}
-@media (768px >= width) {
-  .c-contents.-imgBg .c-contentsBox.-f-logo_s {
-    top: 8%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    z-index: 1;
+@media (1200px >= width) {
+  .c-contents.-imgBg .c-contentsBox.-ja {
+    top: -8%;
+    transform: scale(0.8);
   }
 }
 
@@ -4977,7 +5026,7 @@ button.swiper-pagination-bullet {
 }
 .c-flex.-col3 li {
   position: relative;
-  width: 30%;
+  width: 33.3333333333%;
 }
 .c-flex.-col3 li::after {
   content: "";
@@ -4986,6 +5035,11 @@ button.swiper-pagination-bullet {
   right: 0;
   width: 1px;
   height: 100%;
+}
+@media (768px >= width) {
+  .c-flex.-col3.-f-btm li {
+    width: 30%;
+  }
 }
 .c-flex.-col1_2 {
   flex-wrap: wrap;
@@ -5085,16 +5139,6 @@ button.swiper-pagination-bullet {
     margin-left: 15px;
   }
 }
-@media (width >= 768px) {
-  .c-flex.-col2_2 li.text {
-    width: calc(35% - 15px);
-  }
-}
-@media (width >= 768px) {
-  .c-flex.-col2_2 li.img {
-    width: calc(65% - 15px);
-  }
-}
 .c-flex.-col2_2.-r li {
   width: calc(50% - 5px);
   margin: 0;
@@ -5116,50 +5160,11 @@ button.swiper-pagination-bullet {
     margin-right: 15px;
   }
 }
-@media (width >= 768px) {
-  .c-flex.-col2_2.-r li.text {
-    width: calc(35% - 15px);
-  }
-}
-@media (width >= 768px) {
-  .c-flex.-col2_2.-r li.img {
-    width: calc(65% - 15px);
-  }
-}
 .c-flex.-col2_2__in li {
-  width: calc(50% - 5px) !important;
-  margin: 0;
+  width: 50% !important;
 }
-.c-flex.-col2_2__in li:nth-child(odd) {
-  margin-right: 5px !important;
-  margin-left: auto !important;
-}
-.c-flex.-col2_2__in li:nth-child(even) {
-  margin-right: auto !important;
-  margin-left: 5px !important;
-}
-@media (width >= 768px) {
-  .c-flex.-col2_2__in li {
-    width: calc(50% - 15px);
-  }
-  .c-flex.-col2_2__in li:nth-child(odd) {
-    margin-right: 15px !important;
-    margin-left: auto !important;
-  }
-  .c-flex.-col2_2__in li:nth-child(even) {
-    margin-right: auto !important;
-    margin-left: 15px !important;
-  }
-}
-@media (width >= 768px) {
-  .c-flex.-col2_2__in li.text {
-    width: calc(35% - 15px) !important;
-  }
-}
-@media (width >= 768px) {
-  .c-flex.-col2_2__in li.img {
-    width: calc(65% - 15px) !important;
-  }
+.c-flex.-col2_2__in li a {
+  display: block;
 }
 .c-flex.-col2_2__in.-r li {
   width: calc(50% - 5px);
@@ -5180,16 +5185,6 @@ button.swiper-pagination-bullet {
   }
   .c-flex.-col2_2__in.-r li:nth-child(even) {
     margin-right: 15px !important;
-  }
-}
-@media (width >= 768px) {
-  .c-flex.-col2_2__in.-r li.text {
-    width: calc(35% - 15px);
-  }
-}
-@media (width >= 768px) {
-  .c-flex.-col2_2__in.-r li.img {
-    width: calc(65% - 15px);
   }
 }
 @media (768px >= width) {
@@ -5312,6 +5307,9 @@ button.swiper-pagination-bullet {
 }
 .c-flex.-col5 li {
   width: 20%;
+}
+.c-flex.-col6 li {
+  width: 16.6666666667%;
 }
 .c-flex.-shop-information {
   flex-wrap: wrap;

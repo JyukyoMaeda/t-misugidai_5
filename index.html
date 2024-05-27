@@ -85,25 +85,50 @@
     <!-- header / TOPと各ページの構造が異なる -->
     <header id="header" class="tb-pc c-header pdt1">
         <div class="c-header-wrapper pdb1"><!-- バナー表示エリア -->
-            <div class="c-header__popArea">
-                <ul class="c-header__lists">
-                    <li class="logo pdr1">
-                        <div class="c-contents -h-logo">
-                            <div class="imgBox">
-                                <!-- PCサイズ：757x110 -->
-                                <img class="tb-pc" src="https://via.placeholder.com/757x110/?text=TB-PC 757x110">
-                                <!-- SPサイズ：325x110 -->
-                                <img class="sp" src="https://via.placeholder.com/325x110/?text=SP 325x110">
+            <div class="c-header__misugidai">
+                <ul class="c-header__lists c-flex -h-c">
+                    <!-- ロゴ -->
+                    <li class="c-header__item">
+                        <div class="c-contents -imgBg">
+                            <div class="imgBox"><img src="images/SVG/site-logo_b.svg"></div>
+                            <div class="c-contentsBox -ja">
+                                <p class="s-SS -tate -f-En03 -ls-10">MISUGIDAI</p>
                             </div>
-                            <div class="c-contentsBox -logo-item01"><img src="images/logo/site-logo-bird01.png" alt="動かす画像1"></div>
-                            <div class="c-contentsBox -logo-item02"><img src="images/logo/site-logo-bird02.png" alt="動かす画像2"></div>
-                            <!-- SOLD OUT -->
-                            <!-- <div class="c-contentsBox -soldOut">
-                                <img src="images/item/soldout.png" alt="完売御礼 | おかげさまでお契約いただいきました！">
-                            </div> -->
                         </div>
                     </li>
-                    <li class="c-header__contactArea -borderVer">
+                    <!-- お問い合わせ・リード文・ナビゲーション -->
+                    <li class="c-header__item pdl5">
+                        <div class="contactArea mgb5 mgb5s">
+                            <ul class="c-flex -col2_2__in">
+                                <li><a href="" class="s-S -center -ws-n">資料請求</a></li>
+                                <li><a href="" class="s-S -center -ws-n">見学予約</a></li>
+                            </ul>
+                        </div>
+                        <div class="readArea mgb5 mgb5s">
+                            <ul class="c-flex -col3 -h-c">
+                                <li><p class="s-S -center -ws-n  -ls-10">山と街の境、</p></li>
+                                <li><p class="s-S -center -ws-n  -ls-10">美しい地。</p></li>
+                                <li class="pdr15"><img src="images/SVG/site-grancia_b.svg" alt="GRANCIA"></li>
+                            </ul>
+                        </div>
+                        <nav class="navArea">
+                            <ul class="c-flex -col6">
+                                <li><a class="s-M -center" href="">コンセプト<br><span class="s-SS -f-En03">CONCEPT</span></a></li>
+                                <li><a class="s-M -center" href="">区画<br><span class="s-SS -f-En03"      >LAYOUT</span></a></li>
+                                <li><a class="s-M -center" href="">プラン<br><span class="s-SS -f-En03"    >PLAN</span></a></li>
+                                <li><a class="s-M -center" href="">周辺環境<br><span class="s-SS -f-En03"  >LOCATION</span></a></li>
+                                <li><a class="s-M -center" href="">ギャラリー<br><span class="s-SS -f-En03">GALLERY</span></a></li>
+                                <li><a class="s-M -center" href="">物件概要<br><span class="s-SS -f-En03"  >OUTLINE</span></a></li>
+                            </ul>
+                        </nav>
+                    </li>
+
+
+
+
+
+
+                    <!-- <li class="c-header__contactArea -borderVer">
                         <a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=物件ナンバー" class="top-left navItem -lh-1">
                             <span class="navItem-cTitle -main s-M -s-nav">資料請求</span>
                             <br>
@@ -114,12 +139,11 @@
                             <br>
                             <span class="navItem-cTitle -sub s-SS -s-nav">RESERV</span>
                         </a>
-                        <div class="tag"><span class="s-S -s-nav -ws-n">物件名物件名／新築分譲住宅⚪︎号棟</span></div>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
-        <div class="tb-pc c-header-wrapper"><!-- ナビ表示エリア -->
+        <!-- <div class="tb-pc c-header-wrapper">
             <nav class="c-header__navArea -navColor">
                 <ul class="c-header__navLists -col6">
                     <li class="navItem -kanbai">
@@ -158,7 +182,7 @@
                         </a>
                     </li>
                     <li class="navItem d-menu">
-                        <!-- ドロップメニュー -->
+                        
                         <input id="d-menu__checkbox" class="d-menu__cheakbox" type="checkbox"/>
                         <label class="d-menu__title -lh-1" for="d-menu__checkbox">
                             <span class="navItem-title -main s-M -s-nav">物件概要</span>
@@ -170,11 +194,11 @@
                                 <label class="d-menu__subTitle s-SS popup popup-open" for="popup02">建築条件付き土地</label>
                             </li>
                         </ul>
-                        <!-- //ドロップメニュー -->
+                      
                     </li>
                 </ul>
             </nav>
-        </div>
+        </div> -->
     </header>
     <!-- //header -->
 
@@ -197,7 +221,7 @@
                                     <img class="tb-pc" alt="山岳部の写真_背景" src="images/f-view/f-view01bg_pc___v2.png" alt="">
                                 </div>
                                 <div class="c-contentsBox -f-des_01 fadeLeft">
-                                    <p class="s-M -white -tate_s -lh-2 -ls-5 -right">都会の喧噪より少し離れ、<br>近くの木々の声を聞く暮らし。</p>
+                                    <p class="s-M -white -tate_s -lh-2 -ls-10 -right">都会の喧噪より少し離れて、<br>近くの木々の声を聞く暮らし。</p>
                                 </div>
                                 <div class="sp c-contentsBox -f-title">
                                     <div class="imgBox">
@@ -205,11 +229,11 @@
                                     </div>
                                 </div>
                                 <div class="sp c-contentsBox -f-subTitle">
-                                    <p class="s-S -center -white -ls-5 mgb5s">山と街の境、美しい地。</p>
-                                    <div class="imgBox w50s"><img src="images/SVG/site-grancia.svg" alt="グランシア"></div>
+                                    <p class="s-S -center -white -ls-10 mgb5s">山と街の境、美しい地。</p>
+                                    <div class="imgBox w50s"><img src="images/SVG/site-grancia_w.svg" alt="グランシア"></div>
                                 </div>
                                 <div class="sp c-contentsBox -f-messageArea">
-                                    <ul class="messageLists c-flex -col3">
+                                    <ul class="messageLists c-flex -col3 -f-btm">
                                         <li><div class="imgBox"><img src="images/SVG/site-btm_01.svg" alt="全5区画土地面積60坪"></div></li>
                                         <li><div class="imgBox"><img src="images/SVG/site-btm_02.svg" alt="飯能美杉台2丁目3期 | 建築条件付き土地5棟"></div></li>
                                         <li><div class="imgBox"><img src="images/SVG/site-btm_03.svg" alt="西武池袋線飯能駅徒歩18分"></div></li>
@@ -229,7 +253,7 @@
                                     <img class="tb-pc" src="images/f-view/f-view02bg_pc.png" alt="">
                                 </div>
                                 <div class="c-contentsBox -f-des_02 fadeLeft">
-                                    <p class="s-M -white -tate_s -lh-2 -ls-5 -right">木々と共に生きてきた飯能。<br>山と街の境に暮らしを成す。</p>
+                                    <p class="s-M -white -tate_s -lh-2 -ls-10 -right">木々と共に生きてきた飯能。<br>山と街の境に暮らしを成す。</p>
                                 </div>
                                 <div class="sp c-contentsBox -f-title">
                                     <div class="imgBox">
@@ -237,11 +261,11 @@
                                     </div>
                                 </div>
                                 <div class="sp c-contentsBox -f-subTitle">
-                                    <p class="s-S -center -white -ls-5 mgb5s">山と街の境、美しい地。</p>
-                                    <div class="imgBox w50s"><img src="images/SVG/site-grancia.svg" alt="グランシア"></div>
+                                    <p class="s-S -center -white -ls-10 mgb5s">山と街の境、美しい地。</p>
+                                    <div class="imgBox w50s"><img src="images/SVG/site-grancia_w.svg" alt="グランシア"></div>
                                 </div>
                                 <div class="sp c-contentsBox -f-messageArea">
-                                    <ul class="messageLists c-flex -col3">
+                                    <ul class="messageLists c-flex -col3 -f-btm">
                                         <li><div class="imgBox"><img src="images/SVG/site-btm_01.svg" alt="全5区画土地面積60坪"></div></li>
                                         <li><div class="imgBox"><img src="images/SVG/site-btm_02.svg" alt="飯能美杉台2丁目3期 | 建築条件付き土地5棟"></div></li>
                                         <li><div class="imgBox"><img src="images/SVG/site-btm_03.svg" alt="西武池袋線飯能駅徒歩18分"></div></li>
@@ -261,7 +285,7 @@
                                     <img class="tb-pc" src="images/f-view/f-view03bg_pc.png" alt="">
                                 </div>
                                 <div class="c-contentsBox -f-des_03">
-                                    <p class="s-M -white -tate_s -lh-2 -ls-5 -right">東京と自然、<br class="sp">両方を眺められる街。</p>
+                                    <p class="s-M -white -tate_s -lh-2 -ls-10 -right">東京と自然、<br class="sp">両方を眺められる街。</p>
                                 </div>
                                 <div class="sp c-contentsBox -f-title">
                                     <div class="imgBox">
@@ -269,11 +293,11 @@
                                     </div>
                                 </div>
                                 <div class="sp c-contentsBox -f-subTitle">
-                                    <p class="s-S -center -white -center -ls-5 mgb5s">山と街の境、美しい地。</p>
-                                    <div class="imgBox w50s"><img src="images/SVG/site-grancia.svg" alt="グランシア"></div>
+                                    <p class="s-S -center -white -center -ls-10 mgb5s">山と街の境、美しい地。</p>
+                                    <div class="imgBox w50s"><img src="images/SVG/site-grancia_w.svg" alt="グランシア"></div>
                                 </div>
                                 <div class="sp c-contentsBox -f-messageArea">
-                                    <ul class="messageLists c-flex -col3">
+                                    <ul class="messageLists c-flex -col3 -f-btm">
                                         <li><div class="imgBox"><img src="images/SVG/site-btm_01.svg" alt="全5区画土地面積60坪"></div></li>
                                         <li><div class="imgBox"><img src="images/SVG/site-btm_02.svg" alt="飯能美杉台2丁目3期 | 建築条件付き土地5棟"></div></li>
                                         <li><div class="imgBox"><img src="images/SVG/site-btm_03.svg" alt="西武池袋線飯能駅徒歩18分"></div></li>

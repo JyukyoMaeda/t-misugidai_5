@@ -13,51 +13,6 @@
 		}
 	}
 
-	&.-h-logo{
-		position: relative;
-		.c-contentsBox{
-			position: absolute;
-			// ヘッダーロゴ
-			&.-logo{
-				&-item01{//緑色の鳥
-					top: 51%;
-					left: 101.5%;
-					width: 6.5%;
-					@include min(768){
-						top: 17.5%;
-						left: 30.8%;
-						width: 2.3%;
-					}
-				}
-				&-item02{//黄色の鳥
-					top: 32%;
-					left: 110%;
-					width: 5%;
-					@include min(768){
-						top: 10%;
-						left: 33%;
-						width: 1.5%;
-					}
-				}
-			}
-			// SOLD OUT
-			&.-soldOut{
-				top: 36%;
-				left: 45%;
-				transform: rotate(-5deg) translate(-50%, -50%);
-				width: 70%;
-				z-index: 99;
-				filter: drop-shadow(1px 1px 2px rgb(128, 128, 128));
-				img{background: $sold-out;}
-				@include min(768){
-					top: 41%;
-					left: 63%;
-					width: 40%;
-				}
-			}
-		}
-	}
-
 	&.-f-slider,//スライダー
 	&.-f-view{  //ファーストビュー
 		width: 100%;
@@ -366,36 +321,12 @@
 		.c-contentsBox{
 			position: absolute;
 			// ヘッダーロゴ
-			&.-logo{
-				&-item01{//緑色の鳥
-					top: 54%;
-					left: 95.5%;
-					width: 5%;
-					@include min(768){
-						top: 17.5%;
-						left: 30.8%;
-						width: 2.3%;
-					}
-				}
-				&-item02{//黄色の鳥
-					top: 45%;
-					left: 100%;
-					width: 5%;
-					@include min(768){
-						top: 10%;
-						left: 33%;
-						width: 1.5%;
-					}
-				}
-			}
-			// ファーストビュー > ロゴ
-			&.-f-logo_s{
-				@include max(768){
-					top: 8%;
-					left: 50%;
-					transform: translate(-50%, -50%);
-					width: 60%;
-					z-index: 1;
+			&.-ja{
+				top: 2%;
+				left: -50%;
+				@include max(1200){
+					top: -8%;
+					transform: scale(.8);
 				}
 			}
 		}

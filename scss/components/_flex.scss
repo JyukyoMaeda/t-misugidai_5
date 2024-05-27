@@ -45,7 +45,7 @@
         justify-content: space-between;
         li{
             position: relative;
-            width: 30%;
+            width: calc(100%/3);
             &::after{
                 content: "";
                 position: absolute;
@@ -53,6 +53,13 @@
                 right: 0;
                 width: 1px;
                 height: 100%;
+            }
+        }
+        &.-f-btm{
+            li{
+                @include max(768){
+                    width: 30%;
+                }
             }
         }
     }
@@ -140,12 +147,6 @@
                 &:nth-child(odd){margin-right: 15px;}
                 &:nth-child(even){margin-left: 15px;}
             }
-            &.text{
-                @include min(768){width: calc(35% - 15px);}
-            }
-            &.img{
-                @include min(768){width: calc(65% - 15px);}
-            }
         }
         &.-r{
             li{
@@ -158,43 +159,33 @@
                     &:nth-child(odd){margin-left: 15px;}
                     &:nth-child(even){margin-right: 15px;}
                 }
-                &.text{
-                    @include min(768){width: calc(35% - 15px);}
-                }
-                &.img{
-                    @include min(768){width: calc(65% - 15px);}
-                }
             }
         }
         &__in{// コンテンツ > コンテンツアイテム
             li{
-                width: calc(50% - 5px) !important;
-                margin: 0;
-                &:nth-child(odd){
-                    margin-right: 5px !important;
-                    margin-left: auto !important;
-                }
-                &:nth-child(even){
-                    margin-right: auto !important;
-                    margin-left: 5px !important;
-                }
-                @include min(768){
-                    width: calc(50% - 15px);
-                    &:nth-child(odd){
-                        margin-right: 15px !important;
-                        margin-left: auto !important;
-                    }
-                    &:nth-child(even){
-                        margin-right: auto !important;
-                        margin-left: 15px !important;
-                    }
-                }
-                &.text{
-                    @include min(768){width: calc(35% - 15px) !important;}
-                }
-                &.img{
-                    @include min(768){width: calc(65% - 15px) !important;}
-                }
+                width: 50% !important;
+                // width: calc(50% - 5px) !important;
+                // margin: 0;
+                // &:nth-child(odd){
+                //     margin-right: 5px !important;
+                //     margin-left: auto !important;
+                // }
+                // &:nth-child(even){
+                //     margin-right: auto !important;
+                //     margin-left: 5px !important;
+                // }
+                // @include min(768){
+                //     width: calc(50% - 15px);
+                //     &:nth-child(odd){
+                //         margin-right: 15px !important;
+                //         margin-left: auto !important;
+                //     }
+                //     &:nth-child(even){
+                //         margin-right: auto !important;
+                //         margin-left: 15px !important;
+                //     }
+                // }
+                a{display: block;}
             }
             &.-r{
                 li{
@@ -206,12 +197,6 @@
                         width: calc(50% - 15px);
                         &:nth-child(odd){margin-left: 15px !important;}
                         &:nth-child(even){margin-right: 15px !important;}
-                    }
-                    &.text{
-                        @include min(768){width: calc(35% - 15px);}
-                    }
-                    &.img{
-                        @include min(768){width: calc(65% - 15px);}
                     }
                 }
             }
@@ -321,6 +306,12 @@
     &.-col5{
         li{
             width: calc(100%/5);
+        }
+    }
+    // コンテンツ_カラム（sp,pc:6）
+    &.-col6{
+        li{
+            width: calc(100%/6);
         }
     }
 
