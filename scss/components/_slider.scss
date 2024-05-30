@@ -57,9 +57,9 @@
         .swiper-slide{
             .imgBox img,
             .zoomIn,
-            .zoomOut {transition: 3s all;}
+            .zoomOut {transition: 5s all;}
             .fadeLeft,
-            .fadeRight{transition: 2s all;}
+            .fadeRight{transition: 5s all;}
             &-active{//アクティブ時のアクション
                 .zoomIn{transform: scale(1.03);}
                 .zoomOut{transform: scale(0.97);}

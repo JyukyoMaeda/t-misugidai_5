@@ -345,3 +345,59 @@
 		}
 	}
 }
+
+// ヘッダー > ナビゲーション
+.c-headerNav{
+	@include min(768){
+		width: 110.2%;
+		margin-left: -4.75%;
+	}
+	a{
+		position: relative;
+		display: block;
+		transition: all 1s;
+		&::after{
+			content: "";
+			position: absolute;
+			top: 55%;
+			left: 20%;
+			transform: translateY(-55%);
+			width: 1px;
+			height: 80%;
+			background: $main-color--w;
+			transition: all 1s;
+		}
+		&:hover{
+			&::after{
+				background: $main-color--b;
+			}
+		}
+	}
+}
+
+// フッター > ナビゲーション
+.c-footerNav {
+	a{
+		position: relative;
+		transition: all 1s;
+		@include max(768){
+			display: block;
+		}
+		&::after{
+			content: "";
+			position: absolute;
+			left: 49%;
+			transform: translateX(-50%);
+			bottom: -20%;
+			width: 99%;
+			height: 1px;
+			background: $main-color--w;
+			transition: all 1s;
+		}
+		&:hover{
+			&::after{
+				background: $main-color--b;
+			}
+		}
+	}
+}

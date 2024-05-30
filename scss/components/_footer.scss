@@ -9,6 +9,7 @@
 	&-wrapper{
 		align-items: center;
 		width: 90%;
+        max-width: 1100px;
 		margin: auto;
 		height: auto;
 		// background: #bfbebe2e;
@@ -23,16 +24,6 @@
 			@include max(768){
 				width: 90%;
 			}
-		}
-		&::after{
-			content: "";
-			position: absolute;
-			left: 50%;
-			bottom: 0;
-			transform: translateX(-50%);
-			width: 100vw;
-			height: 1px;
-			background: $main-color--b;
 		}
 	}
 	&__contactArea{
@@ -79,10 +70,10 @@
 				@include min(768){
 					width: calc(100%/4);
 				}
-				&:hover{
-					background: $site-color01;
-					a,span{color: $main-color--w !important;}
-				}
+				// &:hover{
+				// 	background: $site-color01;
+				// 	a,span{color: $main-color--w !important;}
+				// }
 				&:first-child{
 					&::before{
 						content: "";
@@ -392,6 +383,82 @@
 					@include min(768){
 						width: 60%;
 						padding-left: 5%;
+					}
+				}
+			}
+		}
+	}
+
+	// 右寄り（美杉台）
+	&__misugiArea{
+		width: 100%;
+		@include min(768){
+			width: 87.5%;
+			margin-right: 0;
+			margin-left: auto;
+		}
+		.m{
+			&__lists{
+				display: flex;
+				flex-wrap: nowrap;
+				justify-content: space-between;
+				width: auto;
+			}
+			&__list{
+				&.-left{
+					@include min(768){
+						position: relative;
+						width: 40%;
+						max-width: 340px;
+						&::after{
+							content: "";
+							position: absolute;
+							top: 50%;
+							right: 0;
+							transform: translateY(-50%);
+							width: 1px;
+							height: 100%;
+							background: $main-color--b;
+						}
+					}
+				}
+				&.-right{
+					width: 100%;
+					@include min(768){
+						width: 60%;
+						min-width: 460px;
+					}
+				}
+			}
+			&__c__lists{
+				display: flex;
+				flex-wrap: nowrap;
+				.c__item{
+					width: calc(100%/6);
+					@include min(768){width: calc(100%/4);}
+				}
+			}
+		}
+
+	}
+	// 右寄り（美杉台）
+	&__misugiShopArea{
+		width: 55%;
+		margin-right: 0;
+		margin-left: auto;
+		@include min(768){width: 30%;}
+
+		.c-footer__shopFlex{
+			flex-wrap: wrap !important;
+			li{
+				width: 100%;
+				&:nth-child(1){
+					img{
+						display: block;
+						width: 30%;
+						max-width: 170px;
+						margin-right: 0;
+						margin-left: auto;
 					}
 				}
 			}

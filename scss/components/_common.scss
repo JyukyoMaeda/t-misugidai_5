@@ -41,7 +41,7 @@
 }
 .w50s{
     @include max(768){
-        width: 50% !important;
+        width: 40% !important;
         margin: auto;
     }
 }

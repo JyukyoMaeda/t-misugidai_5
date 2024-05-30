@@ -420,11 +420,30 @@
 					&::after{
 						content: "";
 						position: absolute;
-						top: 50%;
-						right: 0;
+						top: 56%;
+						right: -31%;
 						transform: translateY(-50%);
 						width: 1px;
-						height: 100%;
+						height: 90%;
+						background: $main-color--b;
+					}
+				}
+			}
+			a{
+				position: relative;
+				&::after{
+					content: "";
+					position: absolute;
+					bottom: -10%;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 100%;
+					height: 1px;
+					background: $main-color--w;
+					transition: all 1s;
+				}
+				&:hover{
+					&::after{
 						background: $main-color--b;
 					}
 				}

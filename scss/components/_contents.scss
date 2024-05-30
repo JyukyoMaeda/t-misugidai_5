@@ -55,7 +55,7 @@
 			}
 			&.-f-des{
 				&_01{
-					top: 49%;
+					top: 48%;
 					left: 45.7%;
 					white-space: nowrap;
 					@include min(768){
@@ -64,16 +64,16 @@
 					}
 				}
 				&_02{
-					top: 49%;
+					top: 48%;
 					left: 45.7%;
 					white-space: nowrap;
 					@include min(768){
 						top: 40%;
-						left: 20%;
+						left: 25%;
 					}
 				}
 				&_03{
-					top: 49%;
+					top: 48%;
 					left: 45.7%;
 					white-space: nowrap;
 					@include min(768){
@@ -95,7 +95,7 @@
 					}
 				}
 				&_02{// 森林の風景
-					top: -1.75%;
+					top: -.75%;
 					left: -20%;
 					width: 131%;
 					z-index: -1;
@@ -125,7 +125,7 @@
 					bottom: 10%;
 					left: 50%;
 					transform: translateX(-50%);
-					width: 95%;
+					width: 87%;
 				}
 				.messageLists{
 					li{
@@ -145,6 +145,13 @@
 						}
 					}
 				}
+			}
+			// お問い合せ
+			&.-f-contactArea{
+				top: 94%;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 50%;
 			}
 		}
 	}
